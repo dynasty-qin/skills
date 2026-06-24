@@ -1,0 +1,25 @@
+# 告警规则（示例数据）
+# 复制此文件为 alert_rules.yaml 并根据你的风险承受能力调整阈值。
+
+alerts:
+  concentration:
+    gold_weight_above: 0.30
+    satellite_single_above: 0.10
+    core_below: 0.15
+    bond_below: 0.20
+
+  market_move:
+    avoid_chasing_if_daily_up_above: 0.015
+    consider_more_core_if_daily_down_below: -0.01
+    satellite_avoid_chasing_if_daily_up_above: 0.03
+
+  fund_quality:
+    watch_score_below: 60
+    replace_score_below: 60
+    replacement_candidate_score_above: 75
+    min_score_gap_for_replacement: 12
+    watch_consecutive_quarters: 2
+    replace_consecutive_quarters: 4
+
+  data_quality:
+    min_quality_for_action: "medium"

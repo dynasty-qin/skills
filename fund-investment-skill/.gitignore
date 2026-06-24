@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Logs
+logs/*.log
+
+# Reports (输出到 Obsidian，不在 git 中；本地回退报告也不追踪)
+reports/
+
+# === 私密配置文件（不在 Git 中）===
+# 真实持仓、偏好、操作记录都不应上传。
+# 使用 .example.yaml 作为公开模板。
+
+config/portfolio.yaml
+config/allocation_policy.yaml
+config/fund_pool.yaml
+config/data_sources.yaml
+config/user_preferences.yaml
+config/market_snapshot.yaml
+config/alert_rules.yaml
+config/watchlist.yaml
+config/blacklist.yaml
+config/obsidian_path.yaml
+
+# === 私密数据文件 ===
+data/operation_log.csv
+data/fund_metrics.csv
+
+# === 临时文件 ===
+*.tmp
+*.bak

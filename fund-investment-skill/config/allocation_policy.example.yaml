@@ -1,0 +1,52 @@
+# 目标资产配置策略（示例数据）
+# 复制此文件为 allocation_policy.yaml 并填入你的目标配置。
+# 这是组合层面的目标，不是单只基金的目标。
+
+allocation:
+  core:
+    name: "宽基核心仓"
+    target_min: 0.25
+    target_max: 0.35
+    preferred_categories:
+      - "a500"
+    description: "组合底盘，优先通过新增资金逐步提高。"
+
+  defense:
+    name: "债基/现金"
+    target_min: 0.25
+    target_max: 0.30
+    preferred_categories:
+      - "bond"
+      - "cash"
+    description: "稳定底仓，降低组合波动。"
+
+  hedge:
+    name: "黄金对冲"
+    target_min: 0.10
+    target_max: 0.20
+    preferred_categories:
+      - "gold"
+    description: "对冲权益风险和宏观风险。"
+
+  satellite:
+    name: "行业卫星仓"
+    target_min: 0.20
+    target_max: 0.35
+    preferred_categories:
+      - "sector_a"
+      - "sector_b"
+      - "sector_c"
+    description: "用于增强收益，但单只主题基金不宜过高。"
+
+single_fund_limits:
+  core_max: 0.40
+  hedge_max: 0.25
+  bond_max: 0.40
+  satellite_single_max: 0.10
+  high_volatility_single_max: 0.08
+
+priority:
+  - "如果核心宽基仓低于目标下限，新增资金优先补核心宽基。"
+  - "如果黄金仓位高于目标上限，暂停新增黄金。"
+  - "如果债基低于目标下限，新增资金中保留一部分补债基。"
+  - "行业卫星仓只做小额增强，不因短期涨幅追高。"

@@ -1,0 +1,8 @@
+# 手动行情快照兜底文件（示例数据）
+# 复制此文件为 market_snapshot.yaml 并填入你的实时行情。
+# 当 AKShare/efinance 等在线接口不可用时，可手动填入盘中数据。
+# daily_change 使用小数：+0.5% 写 0.005；-1.2% 写 -0.012。
+
+as_of: "示例日期 14:30"
+data_quality: "manual"
+items: []

@@ -1,0 +1,49 @@
+# 当前持仓配置（示例数据）
+# 复制此文件为 portfolio.yaml 并填入你的真实持仓信息。
+#
+# holding_return 使用小数：4.71% 写 0.0471；-8.43% 写 -0.0843。
+# invested 为累计投入金额，不是当前市值。
+# current_value 会由脚本根据 invested * (1 + holding_return) 自动估算。
+#
+# 示例持仓仅供参考，请替换为你的真实数据。
+
+as_of: "2026-06-17"
+base_currency: "CNY"
+
+funds:
+  - code: "022459"
+    name: "示例中证A500ETF联接A"
+    category: "a500"
+    role: "core"
+    fund_type: "etf_linked"
+    invested: 10000
+    holding_return: 0.0120
+    target_min: 0.25
+    target_max: 0.35
+    confidence: "medium_high"
+    notes: "宽基核心仓示例。"
+
+  - code: "000001"
+    name: "示例黄金ETF联接"
+    category: "gold"
+    role: "hedge"
+    fund_type: "commodity_linked"
+    invested: 5000
+    holding_return: -0.0500
+    target_min: 0.10
+    target_max: 0.20
+    confidence: "medium"
+    notes: "黄金对冲仓示例。"
+
+  - code: "000002"
+    name: "示例债券基金"
+    category: "bond"
+    role: "defense"
+    fund_type: "bond_rolling"
+    invested: 8000
+    holding_return: 0.0200
+    target_min: 0.25
+    target_max: 0.30
+    holding_period_days: 60
+    confidence: "low"
+    notes: "债基防守仓示例。"

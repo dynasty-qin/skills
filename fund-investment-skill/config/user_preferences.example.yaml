@@ -1,0 +1,26 @@
+# 用户偏好与操作约束（示例数据）
+# 复制此文件为 user_preferences.yaml 并填入你的偏好。
+
+risk_profile: "balanced_growth"
+default_buy_unit: 500
+small_buy_unit: 100
+max_single_day_buy: 1000
+max_single_switch_ratio: 0.30
+cooling_days_before_replacement: 3
+prefer_new_cash_rebalance: true
+avoid_auto_trading: true
+
+holding_period_preference:
+  core: "long_term"
+  satellite: "medium_long_term"
+  hedge: "medium_term"
+  defense: "medium_term"
+
+share_class_rules:
+  prefer_c_class_if_holding_less_than_months: 12
+  prefer_a_class_if_holding_more_than_months: 12
+  prefer_c_class_when_portfolio_under_adjustment: true
+  prefer_a_class_for_confirmed_long_term_core: true
+
+report_language: "zh-CN"
+report_style: "clear_and_actionable"

@@ -1,0 +1,2 @@
+date,fund_code,action,amount,reason,rule_triggered,market_context,expected_role,after_weight,note
+2026-01-01,000000,buy,1000,示例操作记录,example,,core,,"首次建仓示例，请替换为真实操作记录"

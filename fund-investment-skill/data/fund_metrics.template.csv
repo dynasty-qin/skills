@@ -1,0 +1,6 @@
+code,name,category,fund_type,status,data_status,latest_nav,return_1m,return_3m,return_6m,return_1y,max_drawdown_1y,volatility_1y,tracking_score,scale_score,fee_score,manager_score
+022459,易方达中证A500ETF联接A,a500,passive_index,holding,manual,,,,,,,,80,80,80,70
+022460,易方达中证A500ETF联接C,a500,passive_index,candidate,manual,,,,,,,,80,80,75,70
+023299,汇添富中证A500指数增强C,a500,enhanced_index,candidate,manual,,,,,,,,65,70,65,75
+014098,鹏扬利鑫60天滚动持有债券C,bond,bond_rolling,holding,manual,,,,,,,,60,70,70,70
+000307,易方达黄金ETF联接A,gold,commodity_linked,holding,manual,,,,,,,,75,80,70,60

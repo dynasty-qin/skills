@@ -1,0 +1,37 @@
+# 数据源配置（示例数据）
+# 复制此文件为 data_sources.yaml 并填入你的基金-ETF代理映射。
+# preferred_provider 可选：akshare, efinance, manual_snapshot
+
+preferred_providers:
+  - "akshare"
+  - "efinance"
+  - "manual_snapshot"
+
+fund_proxy_map:
+  "022459":
+    proxy_type: "etf"
+    proxy_code: "159000"
+    proxy_name: "示例中证A500ETF"
+    exposure: 0.95
+  "000001":
+    proxy_type: "etf"
+    proxy_code: "159001"
+    proxy_name: "示例黄金ETF"
+    exposure: 0.95
+  "000002":
+    proxy_type: "bond"
+    proxy_code: null
+    proxy_name: "债券基金不做精确盘中估值"
+    exposure: 0.0
+  "000003":
+    proxy_type: "lof"
+    proxy_code: "160000"
+    proxy_name: "示例指数LOF"
+    exposure: 0.95
+
+manual_snapshot_required_fields:
+  - code
+  - name
+  - daily_change
+  - source
+  - quality

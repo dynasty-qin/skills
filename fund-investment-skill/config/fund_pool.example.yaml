@@ -1,0 +1,74 @@
+# 候选基金池（示例数据）
+# 复制此文件为 fund_pool.yaml 并填入你的候选基金。
+# score 字段由 monthly 任务生成或更新；初始为空。
+
+categories:
+  a500:
+    display_name: "中证A500宽基核心"
+    target_role: "core"
+    current_holdings:
+      - "022459"
+    strategy: "以被动ETF联接为底盘，指数增强作为补充。"
+    candidates:
+      - code: "022459"
+        name: "示例中证A500ETF联接A"
+        type: "passive_index"
+        status: "holding"
+        note: "长期核心仓示例。"
+      - code: "022460"
+        name: "示例中证A500ETF联接C"
+        type: "passive_index"
+        status: "candidate"
+        note: "适合调整期。"
+      - code: "029999"
+        name: "示例中证A500指数增强C"
+        type: "enhanced_index"
+        status: "candidate"
+        note: "增强型候选。"
+
+  gold:
+    display_name: "黄金基金"
+    target_role: "hedge"
+    current_holdings:
+      - "000001"
+    strategy: "黄金重点看跟踪、规模、费率和仓位。"
+    candidates:
+      - code: "000001"
+        name: "示例黄金ETF联接"
+        type: "commodity_linked"
+        status: "holding"
+        note: "当前持有示例。"
+
+  bond:
+    display_name: "债券基金/稳健仓"
+    target_role: "defense"
+    current_holdings:
+      - "000002"
+    strategy: "债基优先看最大回撤、收益稳定性、信用风险和流动性。"
+    candidates:
+      - code: "000002"
+        name: "示例债券基金"
+        type: "bond_rolling"
+        status: "holding"
+        note: "当前持有示例。"
+
+  sector_a:
+    display_name: "行业主题A（示例）"
+    target_role: "satellite"
+    current_holdings: []
+    strategy: "高波动卫星仓示例，优先控制仓位。"
+    candidates: []
+
+  sector_b:
+    display_name: "行业主题B（示例）"
+    target_role: "satellite"
+    current_holdings: []
+    strategy: "消费修复仓示例。"
+    candidates: []
+
+  sector_c:
+    display_name: "行业主题C（示例）"
+    target_role: "satellite"
+    current_holdings: []
+    strategy: "主动基金示例。"
+    candidates: []
