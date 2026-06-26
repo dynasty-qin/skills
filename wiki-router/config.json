@@ -1,0 +1,13 @@
+{
+  "obsidian": {
+    "vaultPath": "E:\\MyVault",
+    "clippingsFolder": "E:\\MyVault\\Clippings"
+  },
+  "environment": {
+    "gitAvailable": true,
+    "canCloneFromGitHub": true,
+    "obsidianClipperInstalled": true,
+    "llmWikiRepoUrl": "https://github.com/SamurAIGPT/llm-wiki-agent.git"
+  },
+  "setupComplete": true
+}
